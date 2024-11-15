@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Loan Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Online Loan Registration Form</h2>
+        <form id="registrationForm">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="firstName">Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="gender">Sex:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required></select>
+
+            <label for="phone">Phone Number:</label>
+            <div class="phone-input">
+                <input type="text" id="phonePrefix" name="phonePrefix" readonly>
+                <input type="text" id="phone" name="phone" placeholder="Phone number" required>
+            </div>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="income">Monthly Income:</label>
+            <input type="text" id="income" name="income" required>
+
+            <label for="loanReason">Reason for the Loan:</label>
+            <input type="text" id="loanReason" name="loanReason" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="idDocument">Upload ID (PDF or Image):</label>
+            <input type="file" id="idDocument" name="idDocument" accept=".pdf, .jpg, .jpeg, .png" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="status"></div>
+    </div>
+</body>
+</html>
